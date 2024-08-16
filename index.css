@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 410px;
+}
+
+.logo-img{
+    height: 55  px;
+    width: 140px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-item{
+    margin-right: 15px;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+i{
+    font-size: 1rem;
+}
+
+.nav-profile{
+    border: 0.5px solid #ccc;
+    border-radius: 35px;
+}
+
+.hero {
+    background-image: url('./assets/hero-bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 45px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.search-form{
+    background-color: white;
+    padding: 22px 38px 22px 38px;
+    border-radius: 12px;
+}
+
+.input-container{
+    border-radius: 16px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-weight: 500;
+    margin: 0.5rem 0.5rem;
+    overflow: hidden;
+}
+
+.date-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-out-container{
+    text-align: right;
+}
+
+input, select{
+    outline: none;
+    border: none;
+    margin-top: 0.5rem;
+    color: #333;
+    width: 100%;
+    cursor: pointer;
+}
+
+.search-form .form-control{
+    padding: 10px 15px;
+}
+
+
+.star-rating label {
+    cursor: pointer;
+}
+
+
+.rating{
+    width: auto;
+}
+
+.btn-dark {
+    background-color: #333;
+    border: none;
+    padding: 10px 0;
+}
+
+
+.btn-dark, .form-control {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #555;
+    border-color: #444;
+}
+
+.rating{
+    color: #333;
+}
+
+.hero h1,p {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .star-rating {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .hero{
+        padding: 12px;
+    }
+
+    h1, p{
+        text-align: center;
+    }
+
+}
